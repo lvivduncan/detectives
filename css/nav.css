@@ -1,0 +1,39 @@
+#nav{
+    height: 54px;
+    background: var(--gray-dark);
+    padding: 0 10px;
+    margin: 0 0 54px;
+}
+
+#nav ul{
+    display: block;
+    display: grid;
+    grid-template-columns: repeat(8,auto);
+}
+
+#nav li{
+    display: inline-block;
+    padding: 0 10px;
+    text-align: center;
+    transition: .5s
+}
+
+#nav li a{
+    display: block;
+    height: 54px;
+    line-height: 54px;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--white);
+    text-decoration: none;
+}
+
+#nav li.current,
+#nav li:hover{
+    background: var(--gray);
+}
+
+#nav li ul{
+    display: none;
+}
