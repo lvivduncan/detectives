@@ -1,0 +1,52 @@
+/* .aside-posts{
+
+}
+
+.aricles h1{
+
+} */
+
+.aside-post{
+    background: var(--white);
+    padding: 15px 20px;
+    display: grid;
+    grid-template-columns: 118px 1fr;
+    grid-gap: 17px;
+    margin: var(--gap) 0 0;
+}
+
+.aside-post .aside-post-extra{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.aside-post .tag{
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.aside-post h3{
+    font-size: 13px;
+}
+
+.aside-post h3 a{
+    font-family: 'Noto Sans', sans-serif;
+    color: var(--red);
+    text-decoration: none;
+    transition: .5s;
+}
+
+.aside-post h3 a:hover{
+    color: var(--black);
+}
+
+.aside-post p{
+    font-size: 11px;
+}
+
+.aside-post time{
+    font-size: 10px;
+    color: var(--gray);
+}

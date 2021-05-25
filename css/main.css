@@ -1,0 +1,110 @@
+
+/* #main{} */
+
+
+/* 1 */
+.main-post-first{
+    height: 390px;
+    display: flex;
+    align-items: flex-end;
+    padding: var(--gap);
+    margin: 0 0 var(--gap);
+}
+
+/* other */
+.main-posts{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: var(--gap);
+}
+
+.main-post{
+    position: relative;
+    background: var(--white)
+}
+
+.main-post-image{
+    overflow: hidden;
+    /* height: 195px; */
+    display: block;
+    margin: 0 0 10px;
+}
+
+.main-post-image img{
+    width: 100%!important;
+    transform: scale(1);
+    transition: .5s;
+}
+
+.main-post-image:hover img{
+    transform: scale(1.05)
+}
+
+.main-post-extra{
+    padding: 0 var(--gap) var(--gap);
+}
+
+.main-post-extra h3{
+    font-size: var(--gap);
+    font-weight: bold;
+    margin: var(--gap)
+}
+
+.main-post-extra h3 a{
+    font-family: 'Noto Sans', sans-serif;
+    text-decoration: none;
+    color: var(--red);
+    transition: .5s;
+}
+
+.main-post-extra h3 a:hover{
+    color: var(--black);
+}
+
+.main-post-extra p{
+    margin: var(--gap)
+}
+
+/* time and autor */
+.service-data{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--gray);
+    font-size: 10px;
+    padding: 0 var(--gap);
+}
+
+/* сірий блок з 3 новинами */
+#insert-news{
+    background: var(--gray-dark);
+    padding: var(--gap);
+    display: grid;
+    grid-template-columns: 1fr 365px;
+    grid-template-areas: 'insert-1 insert-2' 'insert-1 insert-3';
+    grid-gap: var(--gap);
+    height: 430px;
+}
+
+#insert-news article{
+    background-size: cover!important;
+}
+
+#insert-news article:nth-child(1){
+    grid-area: insert-1;
+}
+
+#insert-news article:nth-child(2){
+    grid-area: insert-2;
+}
+
+#insert-news article:nth-child(3){
+    grid-area: insert-3;
+}
+
+/* спецпроекти */
+#special-news{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: var(--gap);
+}
