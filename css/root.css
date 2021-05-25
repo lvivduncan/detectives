@@ -51,3 +51,8 @@ h5{
         width: 95%;
     }
 }
+
+img{
+    max-width: 100%!important;
+    vertical-align: middle;
+}

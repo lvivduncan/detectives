@@ -1,0 +1,6 @@
+#footer{
+    background: url('../images/footer.jpg');
+    background-size: cover;
+    height: 240px;
+    margin-top: var(--gap)
+}

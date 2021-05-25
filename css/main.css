@@ -107,4 +107,9 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: var(--gap);
+    padding: var(--gap) 0
+}
+
+#special-news article{
+    height: 290px;
 }
