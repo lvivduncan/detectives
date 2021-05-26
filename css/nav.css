@@ -18,6 +18,10 @@
     transition: .5s
 }
 
+#nav li.submenu{
+    transition: none;
+}
+
 #nav li a{
     display: block;
     height: 54px;
@@ -34,6 +38,28 @@
     background: var(--gray);
 }
 
+#nav li.submenu{
+    position: relative;
+}
+
 #nav li ul{
     display: none;
+
+    position: absolute;
+    right: 0;
+    width: 240px;
+    background: var(--gray);
+    z-index: 6;
+}
+
+#nav li.submenu:hover ul{
+    display: block;
+}
+
+#nav li.submenu li{
+    display: block;
+}
+
+#nav li.submenu li:hover{
+    background: var(--gray-dark)
 }

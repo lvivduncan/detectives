@@ -1,3 +1,22 @@
+// nav 
+{
+    const nav = document.querySelectorAll('#nav li');
+
+    // add class for parent exists submenu 
+    nav.forEach(item => {
+        if(item.children.length > 1){
+            item.classList.add('submenu');
+        }
+    });
+
+    const submenu = document.querySelectorAll('.submenu');
+
+/*     submenu.forEach(item => {
+        item.addEventListener('mouseup', () => {
+            item.nextElementSibling.classList.add('active');
+        });
+    }); */
+}
 
 {
     // left button
