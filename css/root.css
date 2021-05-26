@@ -72,6 +72,7 @@ article{
     text-decoration: none;
     padding: 5px 10px;
     z-index: 2;
+    font-size: 14px;
 }
 
 .marker a{
@@ -79,7 +80,8 @@ article{
     text-decoration: none;
 }
 
-time,.autor{
+time,
+.autor{
     font-size: 12px;
     color: var(--gray);
 }

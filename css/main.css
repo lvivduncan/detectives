@@ -48,7 +48,7 @@
 }
 
 .main-post-extra h3{
-    /* font-size: var(--gap); */
+    font-size: 18px;
     font-weight: bold;
     margin: var(--gap) 0
 }
