@@ -1,6 +1,127 @@
 #footer{
     background: url('../images/footer.jpg');
     background-size: cover;
-    height: 240px;
-    margin-top: var(--gap)
+    min-height: 240px;
+    margin-top: var(--gap);
+    display: grid;
+    grid-template-columns: repeat(2,1fr) 2fr;
+    grid-gap: 40px;
+    grid-template-areas: 
+        'footer-1 footer-2 footer-3'
+        'footer-4 footer-4 footer-4';
+    font-size: 14px;
+}
+
+@media(max-width:996px) {
+    #footer{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: 
+            'footer-1 footer-2'
+            'footer-4 footer-4';
+    }    
+}
+
+@media(max-width:540px) {
+    #footer{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            'footer-1'
+            'footer-2'
+            'footer-4';
+    }    
+}
+
+#footer-left{
+    grid-area: footer-1;
+    padding: var(--gap) var(--gap) 0;
+}
+
+#footer-logo{
+    display: block;
+    margin: 0 0 var(--gap)
+}
+
+#footer-desc{
+    color: var(--white);
+    font-style: italic;
+}
+
+#footer-center{
+    grid-area: footer-2;
+    padding: var(--gap) var(--gap) 0;
+    color: var(--white)
+}
+
+#footer h4{
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0 0 10px;
+    color: var(--white);
+    text-align: center;
+}
+
+#footer-social ul{
+    display: block;
+    margin: 10px 0;
+}
+
+#footer-social li{
+    display: block;
+    margin: 5px 0;
+}
+
+#footer-social li a{
+    color: var(--white);
+    text-decoration: none;
+    transition: .5s;
+}
+
+#footer-social li a:hover{
+    color: var(--gray);
+}
+
+#footer-right{
+    grid-area: footer-3;
+    padding: var(--gap) var(--gap) 0;
+}
+
+@media(max-width: 996px) {
+    #footer-right{
+        display: none;
+    }
+}
+
+#footer-new{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: var(--gap);
+}
+
+#footer-new a{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: var(--gap);
+    color: var(--white);
+    text-decoration: underline;
+}
+
+#footer-new a:hover{
+    text-decoration: none;
+}
+
+#footer-copy{
+    grid-area: footer-4;
+    background: var(--black-opacity);
+    padding: 5px 0;
+    text-align: center;
+    color: var(--gray);
+    font-size: 14px;
+}
+
+#footer-copy a{
+    color: var(--gray);
+    text-decoration: underline;
+}
+
+#footer-copy a:hover{
+    text-decoration: none;
 }

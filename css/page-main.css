@@ -1,0 +1,31 @@
+
+#page-main{
+    padding: var(--gap);
+    background: var(--white)
+}
+
+#page-main > h1{
+    font-size: 36px;
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0 0 var(--gap);
+}
+
+#page-main .service-data{
+    padding: 0;
+    margin: 0 0 var(--gap)
+}
+
+#page-main figure{
+    margin: 0 0 var(--gap)
+}
+
+#page-main figcaption{
+    font-size: 14px;
+    font-style: italic;
+    color: var(--gray);
+    padding: 10px 0;
+}
+
+#page-main p{
+    margin: 0 0 var(--gap)
+}

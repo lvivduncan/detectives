@@ -79,8 +79,9 @@ article{
     text-decoration: none;
 }
 
-time{
-
+time,.autor{
+    font-size: 12px;
+    color: var(--gray);
 }
 
 time::before{
@@ -147,4 +148,28 @@ time::before{
     display: grid;
     grid-template-columns: 1fr 390px;
     grid-gap: var(--gap);
+}
+
+.social{
+    margin: var(--gap) 0;
+}
+
+.share-facebook svg,
+.share-twitter svg,
+.share-linkedin svg,
+.share-telegram svg,
+.share-viber svg{
+    transition: .5s;
+    transform: translateY(0);
+    width: 32px;
+    height: 32px;
+    fill: var(--red);
+}
+
+.share-facebook:hover svg,
+.share-twitter:hover svg,
+.share-linkedin:hover svg,
+.share-telegram:hover svg,
+.share-viber:hover svg{
+    transform: translateY(-5px);
 }
