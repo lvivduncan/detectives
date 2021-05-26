@@ -141,3 +141,10 @@ time::before{
         grid-template-columns: 1fr;
     }
 }
+
+/* inner page */
+#page{
+    display: grid;
+    grid-template-columns: 1fr 390px;
+    grid-gap: var(--gap);
+}
