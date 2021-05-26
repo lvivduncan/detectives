@@ -6,35 +6,3 @@
     min-height: 600px;
 }
 
-#aside{
-    /* flex: 1; */
-    /* 390 */
-}
-
-#aside h1{
-    font-weight: bold;
-    font-size: 24px;
-    margin: 0 0 var(--gap);
-}
-
-#aside header{
-    background: var(--white);
-    padding: 15px 20px;
-    margin: 0 0 var(--gap);
-}
-
-#aside .tabs{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#aside .tabs span{
-    font-size: 14px;
-    cursor: pointer;
-}
-
-#aside .tabs span.active{
-    color: var(--red);
-    font-weight: bold;
-}

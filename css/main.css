@@ -1,14 +1,6 @@
 
-/* #main{} */
-
-
-/* 1 */
-.main-post-first{
-    height: 390px;
-    display: flex;
-    align-items: flex-end;
-    padding: var(--gap);
-    margin: 0 0 var(--gap);
+#main{
+    overflow: hidden;
 }
 
 /* other */
@@ -84,6 +76,7 @@
     grid-template-areas: 'insert-1 insert-2' 'insert-1 insert-3';
     grid-gap: var(--gap);
     height: 430px;
+    margin: var(--gap) 0 0;
 }
 
 #insert-news article{
@@ -102,6 +95,57 @@
     grid-area: insert-3;
 }
 
+#insert-news .caption{
+    padding: var(--gap);
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: var(--black-opacity);
+    color: var(--white);
+    overflow: hidden;
+    transition: .5s;
+}
+
+#insert-news .caption h3{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    margin: 0 0 10px;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+#insert-news .caption p{
+    font-size: 14px;
+}
+
+/* 1 великий блок зліва */
+#insert-news article:first-child .caption h3{
+    font-size: 36px;
+    line-height: 1.1;
+    margin: 0 0 var(--gap);
+}
+
+#insert-news article:first-child .caption p{
+    font-size: 28px;
+    line-height: 1.1;
+}
+
+#insert-news a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+#insert-news a:hover{
+    text-decoration: underline;
+}
+
+#insert-news article:hover .caption{
+    background: var(--gray)
+}
+
+
 /* спецпроекти */
 #special-news{
     display: grid;
@@ -112,4 +156,35 @@
 
 #special-news article{
     height: 290px;
+}
+
+#special-news .caption{
+    padding: var(--gap);
+    position: absolute;
+    width: 100%;
+    max-height: 50%;
+    bottom: 0;
+    left: 0;
+    background: var(--black-opacity);
+    color: var(--white);
+    overflow: hidden;
+    transition: .5s;
+}
+
+#special-news article:hover .caption{
+    background: var(--gray)
+}
+
+#special-news .caption h3{
+    margin: 0 0 var(--gap);
+    line-height: 1.3;
+}
+
+#special-news a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+#special-news a:hover{
+    text-decoration: underline;
 }
