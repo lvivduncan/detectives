@@ -1,7 +1,9 @@
-/* tabs */
-#aside{
-    /* flex: 1; */
-    /* 390 */
+/* #aside{} */
+
+@media(max-width:776px) {
+    #aside{
+        display: none;
+    }
 }
 
 #aside h1{

@@ -1,21 +1,25 @@
 // nav 
 {
-    const nav = document.querySelectorAll('#nav li');
-
     // add class for parent exists submenu 
-    nav.forEach(item => {
+    document.querySelectorAll('#nav li').forEach(item => {
         if(item.children.length > 1){
             item.classList.add('submenu');
         }
     });
 
-    const submenu = document.querySelectorAll('.submenu');
+    const button = document.createElement('div');
+    button.setAttribute('id', 'button-mobile');
 
-/*     submenu.forEach(item => {
-        item.addEventListener('mouseup', () => {
-            item.nextElementSibling.classList.add('active');
-        });
-    }); */
+    if(window.innerWidth < 996){
+        document.getElementById('nav').append(button);
+    } else {
+        button.remove();
+    }
+
+    // mobile
+    document.getElementById('button-mobile') && document.getElementById('button-mobile').addEventListener('click', () => {
+        document.querySelector('#nav ul').classList.toggle('active');
+    });
 }
 
 {

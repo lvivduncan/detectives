@@ -63,3 +63,49 @@
 #nav li.submenu li:hover{
     background: var(--gray-dark)
 }
+
+/* mobile */
+@media(max-width:996px) {
+
+    #nav{
+        position: relative;
+    }
+
+    #button-mobile {
+        position: absolute;
+        right: 12px;
+        top: 4px;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ffffff'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z'/%3E%3C/svg%3E");
+        width: 42px;
+        height: 42px;
+        cursor: pointer;
+    }
+    
+    #nav ul{
+        display: none;
+    }
+
+    #nav ul.active{
+        display: block;
+        position: relative;
+        top: 54px;
+        z-index: 7;
+        background: var(--gray)
+    }
+
+    #nav ul.active li{
+        display: block;
+        text-align: left;
+    }
+
+    #nav ul.active .submenu ul{
+        display: block;
+        position: relative;
+    }
+
+    #nav ul.active .submenu ul li{
+        padding-left: 20px
+    }
+
+
+}

@@ -1,8 +1,0 @@
-
-#content{
-    display: grid;
-    grid-template-columns: 390px 1fr;
-    grid-gap: var(--gap);
-    min-height: 600px;
-}
-

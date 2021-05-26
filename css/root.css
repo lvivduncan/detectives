@@ -102,3 +102,42 @@ time::before{
     position: relative;
     top: 2px;
 }
+
+.all{
+    display: flex;
+    justify-content: center;
+    margin: var(--gap) 0;
+    background: var(--gray-ultralight);
+    text-decoration: none;
+    transition: .5s;
+}
+
+.all span{
+    padding: 5px;
+    background: var(--gray-light);
+    color: var(--black);
+    display: block;
+    transition: .5s;
+}
+
+.all:hover{
+    background: var(--gray-light);
+}
+
+.all:hover span{
+    background: var(--gray);
+    color: var(--white);
+}
+
+#content{
+    display: grid;
+    grid-template-columns: 390px 1fr;
+    grid-gap: var(--gap);
+    min-height: 600px;
+}
+
+@media(max-width:776px) {
+    #content{
+        grid-template-columns: 1fr;
+    }
+}

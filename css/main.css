@@ -4,10 +4,16 @@
 }
 
 /* other */
-.main-posts{
+#main-posts{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-gap: var(--gap);
+}
+
+@media(max-width:996px) {
+    #main-posts{    
+        grid-template-columns: 1fr;
+    }   
 }
 
 .main-post{
@@ -17,9 +23,14 @@
 
 .main-post-image{
     overflow: hidden;
-    /* height: 195px; */
     display: block;
     margin: 0 0 10px;
+}
+
+@media(max-width:540px) {    
+    .main-post-image{
+        margin: 0 0 var(--gap);
+    }
 }
 
 .main-post-image img{
@@ -42,6 +53,12 @@
     margin: var(--gap)
 }
 
+@media(max-width:540px) {    
+    .main-post-extra h3{
+        margin: 0 0 var(--gap);
+    }
+}
+
 .main-post-extra h3 a{
     font-family: 'Noto Sans', sans-serif;
     text-decoration: none;
@@ -57,6 +74,12 @@
     margin: var(--gap)
 }
 
+@media(max-width:540px) {    
+    .main-post-extra p{
+        margin: 0 0 var(--gap);
+    }
+}
+
 /* time and autor */
 .service-data{
     display: flex;
@@ -65,6 +88,12 @@
     color: var(--gray);
     font-size: 10px;
     padding: 0 var(--gap);
+}
+
+@media(max-width:540px) {
+    .service-data{
+        padding: 0;
+    }   
 }
 
 /* сірий блок з 3 новинами */
@@ -79,8 +108,28 @@
     margin: var(--gap) 0 0;
 }
 
+@media(max-width:776px) {
+    #insert-news{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width:540px) {
+    #insert-news{
+        grid-template-columns: 1fr;
+        grid-template-areas: 'insert-1' 'insert-2' 'insert-3';
+        height: auto;
+    }   
+}
+
 #insert-news article{
     background-size: cover!important;
+}
+
+@media(max-width:540px) {
+    #insert-news article{
+        height: 220px;
+    }
 }
 
 #insert-news article:nth-child(1){
@@ -108,12 +157,33 @@
     transition: .5s;
 }
 
+@media(max-width:540px) {
+    #insert-news .caption{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+
+        top: auto;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+    }
+}
+
 #insert-news .caption h3{
     font-family: 'Noto Sans', sans-serif;
     font-size: 14px;
     margin: 0 0 10px;
     font-weight: bold;
     line-height: 1.3;
+}
+
+@media(max-width:776px) {
+    #insert-news .caption h3{
+        font-size: 16px;
+        line-height: 1.3!important;
+    }   
 }
 
 #insert-news .caption p{
@@ -127,9 +197,22 @@
     margin: 0 0 var(--gap);
 }
 
+@media(max-width:776px) {
+    #insert-news article:first-child .caption h3{
+        font-size: 16px;
+        margin: 0;
+    }
+}
+
 #insert-news article:first-child .caption p{
     font-size: 28px;
     line-height: 1.1;
+}
+
+@media(max-width:776px) {    
+    #insert-news .caption p{
+        display: none!important;
+    }
 }
 
 #insert-news a{
@@ -154,8 +237,21 @@
     padding: var(--gap) 0
 }
 
+@media(max-width:996px) {
+    #special-news{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width:540px) {
+    #special-news{
+        grid-template-columns: 1fr;
+    }
+}
+
 #special-news article{
     height: 290px;
+    background-size: cover!important;
 }
 
 #special-news .caption{
@@ -180,6 +276,16 @@
     line-height: 1.3;
 }
 
+@media(max-width:540px) {
+    #special-news .caption h3{
+        margin: 0;
+    }
+
+    #special-news .caption p{
+        display: none;
+    }
+}
+
 #special-news a{
     color: var(--white);
     text-decoration: none;
@@ -188,3 +294,21 @@
 #special-news a:hover{
     text-decoration: underline;
 }
+
+
+/* блок "про нас" */
+#us{
+    position: relative;
+}
+
+@media(max-width:540px) {
+    #us{    
+        height: 220px;
+    }
+    
+    #us img{
+        object-fit: cover;
+        height: 100%;
+    }
+}
+/* блок "про нас" */
