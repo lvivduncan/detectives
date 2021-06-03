@@ -1,0 +1,23 @@
+#articles{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: var(--gap);
+}
+
+@media(max-width: 996px) {
+    #articles{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media(max-width: 776px) {
+    #articles{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width: 540px) {
+    #articles{
+        grid-template-columns: 1fr;
+    }
+}

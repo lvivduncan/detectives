@@ -1,11 +1,21 @@
 
 #page-main{
     padding: var(--gap);
-    background: var(--white)
+    background: var(--white);
+    overflow: hidden;
 }
 
 #page-main > h1{
     font-size: 36px;
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0 0 var(--gap);
+    line-height: 1.3;
+}
+
+#page-main > h2,
+#page-main > h3,
+#page-main > h4,
+#page-main > h5{
     font-family: 'Noto Sans', sans-serif;
     margin: 0 0 var(--gap);
 }
@@ -28,4 +38,13 @@
 
 #page-main p{
     margin: 0 0 var(--gap)
+}
+
+#page-main ul,
+#page-main ol{
+    margin: 10px 0 10px 40px;
+}
+
+#page-main li{
+    margin: 5px 0;
 }

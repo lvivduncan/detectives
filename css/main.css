@@ -258,7 +258,7 @@
     padding: var(--gap);
     position: absolute;
     width: 100%;
-    max-height: 50%;
+    height: 50%;
     bottom: 0;
     left: 0;
     background: var(--black-opacity);

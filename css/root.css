@@ -18,11 +18,7 @@
     --red: #eb0000;
 
     --white: #fff;
-
-    
-
     /**/
-
     --gap: 20px;
 }
 
@@ -40,6 +36,16 @@ h4,
 h5{
     font-family: 'Noto Serif', serif;
     line-height: 1;
+}
+
+a{
+    color: var(--red);
+    text-decoration: underline;
+}
+
+a:hover,
+a:focus{
+    text-decoration: none;
 }
 
 #wrapper{
@@ -132,6 +138,15 @@ time::before{
     color: var(--white);
 }
 
+#heading{
+    text-align: center;
+    margin: var(--gap);
+}
+
+#heading h1{
+    margin-bottom: 40px
+}
+
 #content{
     display: grid;
     grid-template-columns: 390px 1fr;
@@ -150,6 +165,15 @@ time::before{
     display: grid;
     grid-template-columns: 1fr 390px;
     grid-gap: var(--gap);
+}
+
+@media(max-width:996px) {
+    #page{        
+        grid-template-columns: 1fr;
+    }    
+/*     #page aside{
+        display: none;
+    } */
 }
 
 .social{
@@ -174,4 +198,9 @@ time::before{
 .share-telegram:hover svg,
 .share-viber:hover svg{
     transform: translateY(-5px);
+}
+
+hr{
+    margin: var(--gap) 0;
+    border-top: 1px solid var(--gray);
 }

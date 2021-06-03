@@ -1,0 +1,26 @@
+.pagination {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.pagination li {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination li a {
+    background-color: var(--gray-light);
+    color: var(--black);
+    font-weight: 700;
+    display: block;
+    padding: 6px 10px;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.pagination li.active a,
+.pagination li a:hover {
+    background-color: var(--red);
+    color: var(--white)
+}
