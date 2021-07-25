@@ -1,0 +1,95 @@
+/* 25-7-2021 */
+#victory
+{
+    margin: 20px 0;
+    background: var(--white);
+    background: var(--wrapper);
+}
+
+#victory header
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--gap);
+    background: var(--white) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23сссссс' viewBox='0 0 16 16'%3E%3Cpath d='M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z'/%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right var(--gap) center;
+    background-size: 32px 32px;
+    cursor: pointer;
+}
+
+#victory header.active
+{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='currentColor' viewBox='0 0 16 16'%3E%3Cpath d='M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z'/%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E");
+}
+
+#awards
+{
+    display: none;
+    background: var(--wrapper);
+}
+
+#awards.active
+{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-gap: var(--gap);
+    padding: var(--gap);
+}
+
+@media(max-width:996px)
+{
+    #awards.active
+    {
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+@media(max-width:776px)
+{
+    #awards.active
+    {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media(max-width:500px)
+{
+    #awards.active
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+#awards a
+{
+    text-decoration: none;
+    color: var(--gray);
+    user-select: none;
+    background: var(--white);
+    padding: 10px;
+    display: grid;
+    place-content: center;
+}
+
+#awards span
+{
+    display: block;
+    margin: 10px 0;
+    font-size: 11px;
+    text-align: center;
+    transition: .5s;
+}
+
+#awards a:hover span
+{
+    color: var(--red)
+}
+
+#awards b
+{
+    text-align: center;
+    font-size: 13px;
+}
