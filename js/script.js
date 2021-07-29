@@ -177,23 +177,25 @@ const e=document.querySelectorAll(".share-facebook"),t=document.querySelectorAll
 
 // awards
 {
+    const awards = document.querySelectorAll('.awards');
 
-    const vh = document.querySelector('#victory header');
-    const va = document.getElementById('awards');
+    awards.forEach(item => {
 
-    if(localStorage.victory == 1){
+        const header = item.querySelector('header');
+        const main = item.querySelector('div');
 
-        vh && vh.classList.add('active');
-        va && va.classList.remove('active');
+        header && header.addEventListener('click',() => {
+            header.classList.toggle('active');
+            main.classList.toggle('active');
 
-    } else {
-        
-        localStorage.victory = 1;
-    }
+            localStorage.victory = 1;
+        });
 
-    vh && vh.addEventListener('click',() => {
-        vh.classList.toggle('active');
-        va.classList.toggle('active');
+        if(localStorage.victory == 1){
+            header && header.classList.add('active');
+            main && main.classList.remove('active');            
+        }
+
     });
 
 }

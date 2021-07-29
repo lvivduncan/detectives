@@ -1,12 +1,12 @@
 /* 25-7-2021 */
-#victory
+.awards
 {
     margin: 20px 0;
     background: var(--white);
     background: var(--wrapper);
 }
 
-#victory header
+.awards header
 {
     position: relative;
     display: flex;
@@ -20,18 +20,18 @@
     cursor: pointer;
 }
 
-#victory header.active
+.awards header.active
 {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='currentColor' viewBox='0 0 16 16'%3E%3Cpath d='M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z'/%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E");
 }
 
-#awards
+.awards > div
 {
     display: none;
     background: var(--wrapper);
 }
 
-#awards.active
+.awards > div.active
 {
     display: grid;
     grid-template-columns: repeat(6,1fr);
@@ -41,7 +41,7 @@
 
 @media(max-width:996px)
 {
-    #awards.active
+    .awards > div.active
     {
         grid-template-columns: repeat(4,1fr);
     }
@@ -49,7 +49,7 @@
 
 @media(max-width:776px)
 {
-    #awards.active
+    .awards > div.active
     {
         grid-template-columns: repeat(3,1fr);
     }
@@ -57,13 +57,13 @@
 
 @media(max-width:500px)
 {
-    #awards.active
+    .awards > div.active
     {
         grid-template-columns: repeat(2,1fr);
     }
 }
 
-#awards a
+.awards > div a
 {
     text-decoration: none;
     color: var(--gray);
@@ -74,7 +74,7 @@
     place-content: center;
 }
 
-#awards span
+.awards > div span
 {
     display: block;
     margin: 10px 0;
@@ -88,7 +88,7 @@
     color: var(--red)
 }
 
-#awards b
+.awards > div b
 {
     text-align: center;
     font-size: 13px;
