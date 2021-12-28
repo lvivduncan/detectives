@@ -204,3 +204,42 @@ hr{
     margin: var(--gap) 0;
     border-top: 1px solid var(--gray);
 }
+
+/* 28-12-2021 */
+.gallery
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: var(--gap);
+    margin: 0 0 var(--gap);
+}
+
+@media(max-width:996px)
+{
+    .gallery
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width:540px)
+{
+    .gallery
+    {
+        grid-template-columns: 1fr;
+    }
+}
+
+.gallery a
+{
+    text-decoration: none;
+    display: block;
+    border: 1px solid var(--gray);
+}
+
+.gallery a img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
