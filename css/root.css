@@ -243,3 +243,11 @@ hr{
     width: 100%;
     object-fit: cover;
 }
+
+/* 29-12-2021 */
+blockquote
+{
+    border-left: 5px solid var(--gray);
+    padding-left: var(--gap);
+    font-style: italic;
+}
