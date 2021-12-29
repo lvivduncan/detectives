@@ -112,7 +112,15 @@ time::before{
     top: 2px;
 }
 
-.all{
+ul.autor
+{
+    display: flex!important;
+    align-items: center;
+    gap: 5px;
+}
+
+.all
+{
     display: flex;
     justify-content: center;
     margin: var(--gap) 0;
