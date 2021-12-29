@@ -48,3 +48,16 @@
 #page-main li{
     margin: 5px 0;
 }
+
+/* 29-12-2021 */
+/* //////////////////////////
+// важливий виділений блок //
+////////////////////////// */
+#page-main .important
+{
+    margin: 10px 0;
+    padding: 20px 10px;
+    border-top: 3px solid var(--gray);
+    border-bottom: 3px solid var(--gray);
+    text-align: center;
+}
