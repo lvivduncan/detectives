@@ -102,7 +102,8 @@ time::before{
     top: 2px;
 }
 
-.autor::before{
+.autor::before
+{
     content: '';
     display: inline-block;
     width: 12px;
@@ -112,7 +113,25 @@ time::before{
     top: 2px;
 }
 
-.all{
+ul.autor
+{
+    display: flex!important;
+    align-items: center;
+    gap: 5px;
+}
+
+ul.autor::before
+{
+    top: 0;
+}
+
+ul.autor li
+{
+    display: block!important;
+}
+
+.all
+{
     display: flex;
     justify-content: center;
     margin: var(--gap) 0;
@@ -244,10 +263,29 @@ hr{
     object-fit: cover;
 }
 
-/* 29-12-2021 */
 blockquote
 {
     border-left: 5px solid var(--gray);
     padding-left: var(--gap);
     font-style: italic;
+}
+
+/* //////////////////////////////////
+// вставка відеоролика зі сервісів // 
+////////////////////////////////// */
+.video
+{
+    position:relative;
+    padding:30px 0 56.25% 0;
+    height:0;
+    overflow:hidden;
+}
+
+.video iframe
+{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
 }
